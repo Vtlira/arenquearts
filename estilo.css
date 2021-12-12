@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: rgb(214, 212, 212);
+ width: 100vw;
+ height: 100vh;
+ font-family: 'Roboto', sans-serif;
+    
+}
+h1, h2 , h3{
+    font-family: 'Bakbak One', cursive;
+}
+#menu{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    position: fixed;
+    left: 0;
+    margin: 0;
+    z-index: 100;
+   
+    
+
+}
+
+#menu h1{
+    color:gainsboro; }
+
+#menu a{
+    color: white;
+    font-family: Courier, monospace;
+    font-weight: 1000;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#menu a:hover{
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: underline overline;
+    
+}
+
+#janela{
+    width: 100%;
+  position: relative;
+}
+
+
+#imagem img{
+    background-size: cover;
+    width: 100%;
+}
+
+h2{
+    position: absolute;
+    top: 55px;
+    left: 40px;
+    width: 300px;
+    font-size: 30px;
+    color: #CFD8DC ;
+    text-shadow: 0px 0px 5px black;
+    background-color: rgba(128, 128, 128, 0.575);
+    padding: 5px;
+    
+}
+
+.quadro1{
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    width: 500px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    background-color: rgba(128, 128, 128, 0.575);
+    padding: 5px;
+    
+}
+
+.quadro1 ul {
+    padding-left: 70px;
+}
+
+.quadro1 h3{    
+    color:#ECEFF1;
+}
+
+#quadro2{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.808);
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.banner{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.11);
+    margin: 20px;
+    padding: 10px;
+    
+
+}
+
+.banner img{
+    height: 70%;
+    width:70%;
+    border-radius: 10px;
+}
+
+.banner h3{
+    text-transform: uppercase;
+    margin: 20px;
+
+}
+
+.banner P{
+    text-transform: uppercase;
+    margin: 20px;
+
+}
+
+.banner a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.banner a:hover{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+#autoral{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.formulario{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+     padding-top: 100px;
+}
+.formulario p {
+    width: 50%;
+    margin-top: 15px;
+    text-transform: uppercase;
+    -webkit-text-stroke: thick;
+    word-spacing: 4px;
+    text-indent: 30px;
+    margin-bottom: -50px;
+}
+
+.formulario input , textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.formulario button{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+        .banner{
+            width: 100%;
+        }
+
+        h2{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            font-size: 20px;
+            color: white;
+            text-shadow: 0px 0px 5px black;
+            background-color: rgba(128, 128, 128, 0.575);
+            
+        }
+        .quadro1{
+            position: absolute;
+            top: 100px;
+            left: 5px;
+            width: 400px;
+            font-size: 30px;
+          
+            
+        }
+
+        #menu{
+            flex-wrap: wrap;
+        }
+        #imagem img{
+            height: 200px;
+        }
+        .formulario p {
+            width: 80%;
+           
+        }
+  }
+
+  @media screen and (max-width: 580px){
+    #menu{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+    }
+    .quadro1{
+        
+        width: 380px;
+        top: 200px;
+        font-size: 25px;
+        margin-top: 30px;
+      
+        
+    }
+
+    #janela h2{
+        font-size: 30px;
+        top: 80px;
+    }
+
+      #imagem img{
+        height: 480px;
+    }
+    .formulario textarea{
+        width: 80%;
+    }
+    footer{
+        height: 200px;
+    }
+    
+    footer a {
+        font-size: 28px;
+        
+    }
+    
+    footer img{
+        width: 30px;
+        height: 30px;
+        
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .quadro1{
+        
+        width: 300px;
+        top: 230px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #janela h2{
+        top:90px ;
+    }
+    .quadro1 ul {
+        padding-left: 20px;
+    }
+    footer a{
+        font-size: 25px;
+    }
+    
+}
+
+
+@media screen and (max-width: 325px){
+
+    #janela h2{
+        top:110px;
+    }
+
+    .quadro1{
+        
+       
+        top: 250px;
+        
+    }
+
+    
+}
+
+@media screen and (min-height: 1000px) and (min-width: 700px){
+    
+    #imagem img{
+        height: 600px;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+}
+
+
+
