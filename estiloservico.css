@@ -134,6 +134,20 @@ footer img{
     padding: 5px;
 }
 
+#area {
+
+    color: white;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+    border: dotted;
+}
+
+#area:hover{
+   cursor:crosshair;
+}
+
 
 
 
